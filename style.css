@@ -1,0 +1,861 @@
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: #f1f1f1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+header aside .sce{
+    padding-left: 25px;
+      box-sizing: border-box;
+}
+@media (max-width:600px) {
+    header aside .sce{
+        padding: 20px;
+    }
+}
+/* start main */
+
+header main .contaner-nav {
+    padding-top: 20px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+}
+    
+
+header main .contaner-nav .top-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+header main .contaner-nav .top-nav div{
+  display: flex;
+  flex-direction: column;
+}
+header main .contaner-nav .top-nav div:nth-of-type(1){
+    padding-left: 20px;
+  width: 50%;
+  height: 30%;
+}
+header main .contaner-nav .top-nav div:nth-of-type(1) img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+header main .contaner-nav  div:nth-of-type(2){
+    width: 100%;
+    padding-left: 20px;
+  gap: 10px;
+}
+header main .contaner-nav  div:nth-of-type(2) p{
+  font-weight: 500;
+  font-size: 20px;
+}
+header main .contaner-nav div:nth-of-type(2) span{
+   opacity: .6;
+   font-size: 15px;
+}
+header main .contaner-nav div:nth-of-type(3) nav:nth-of-type(1) a{
+    color: #009688;
+}
+header main .contaner-nav div:nth-of-type(3) nav:nth-of-type(1) i{
+    color: #009688;
+}
+header main  .contaner-nav div:nth-of-type(3) nav{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+}
+header main  .contaner-nav div:nth-of-type(3) nav:hover{
+    background-color: #ccc;
+}
+header  main .contaner-nav div:nth-of-type(3) a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+header main .contaner-nav div:nth-of-type(4){
+    width: 100%;
+    padding-left: 20px;
+ flex-direction: row;
+ gap: 5px;
+
+}
+header main .contaner-nav div:nth-of-type(4) i{
+    font-size: 16px;
+}
+header main .contaner-nav div:nth-of-type(4) i:hover{
+    opacity: .5;
+}
+
+    @media (max-width:995px) {
+header main .contaner-nav{
+    display: none;
+}
+header{
+    display:grid;
+    grid-template-columns: 5fr;
+}
+
+    }
+/* end main */
+
+/* start aside */
+/* start   contaner-top*/
+
+aside{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+aside .contaner-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    display: none;
+}
+
+aside .contaner-top div:nth-of-type(1){
+    font-size: 50px;
+}
+aside .contaner-top div:nth-of-type(2){
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+aside .contaner-top div:nth-of-type(2) img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@media (max-width:995px) {
+aside .contaner-top{
+    display: flex;
+    width: 100%;
+}
+   
+    
+        }
+/* end contaner-top*/
+/* start contaner-1 */
+
+
+aside .contaner-1{
+    width: 100%;
+}
+aside .contaner-1 .back{
+   padding-bottom: 20px;
+  border-bottom: 5px solid #757474;
+  opacity: .6;
+  width: 100%;
+}
+aside .contaner-1 .card{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+aside .contaner-1 .card h1{
+ font-size: 35px;
+ font-weight: 500;
+}
+aside .contaner-1 .card div:nth-of-type(1){
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+aside .contaner-1 .card div:nth-of-type(1) p{
+    font-size: 14px;
+}
+aside .contaner-1 .card div:nth-of-type(1) div{
+    display: flex;
+    gap: 5px;
+}
+aside .contaner-1 .card div:nth-of-type(1) div button{
+    border: none;
+    font-weight: normal;
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside .contaner-1 .card div:nth-of-type(1) div button i{
+    padding-right:20px;
+}
+aside .contaner-1 .card div:nth-of-type(1) div button:not(:first-of-type){
+    font-size: 14px;
+}
+
+aside .contaner-1 .card div:nth-of-type(1) div button:first-of-type{
+    background-color: black;
+    color: #fff;
+}
+aside .contaner-1 .card div:nth-of-type(1) div button:hover{
+    background-color: #b4b4b4;
+}
+@media (max-width:995px) {
+aside .sce {
+   padding-right: 20px;
+}
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:580px) {
+
+}
+/* end contaner-1 */
+/* start contaner card */
+aside   .contaner-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+aside   .contaner-card > .card{
+    background-color: #fff;
+    width: calc((100% - 30px) / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+aside   .contaner-card .card div:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+}
+aside   .contaner-card .card div:nth-of-type(1) img{
+    width: 100%;
+    height: 100%;
+}
+aside   .contaner-card .card div:nth-of-type(2){
+   padding: 0 20px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+aside   .contaner-card .card div:nth-of-type(2) p{
+  width: 100%;
+  font-size: 14px;
+}
+
+/* end contaner card */
+
+/* start  number */
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number div .last{
+    font-size: 14px;
+}
+.number > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number div div  a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+  padding:   8px 10px;
+}
+.number div  a{
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+  padding:  8px  10px;
+  font-weight: normal;
+}
+
+.number div a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.number div div a:first-of-type::after{
+    content: '<<';
+    font-size: 14px;
+}
+
+.number div div  .top{
+    background-color: #000;
+    color: #fff;
+}
+.number div div  .top:hover{
+    background-color: #ccc;
+}
+@media (max-width:600px) {
+    aside   .contaner-card{
+        flex-direction: column;
+        gap: 20px;
+    }
+        aside   .contaner-card > .card{
+            width: 100%;
+        }
+        
+}
+/* end  number */
+
+/* start contaner-About */
+.contaner-About{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+}
+.contaner-About .card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.contaner-About .card div:nth-of-type(1),
+.contaner-About .card div:nth-of-type(2){
+  width: calc((100% - 10px) / 2);
+  height: 300px;
+
+}
+.contaner-About .card div:nth-of-type(1) img ,
+.contaner-About .card div:nth-of-type(2) img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.contaner-About .About-Me{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contaner-About .About-Me h2{
+  font-weight: 400;
+}
+.contaner-About .About-Me p{
+    opacity: .7;
+}
+
+.contaner-About .Technical-Skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contaner-About .Technical-Skills div h3{
+    font-weight: normal;
+}
+.contaner-About .Technical-Skills .card-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+.contaner-About .Technical-Skills  .card-2 > div:nth-of-type(1) ,
+.contaner-About .Technical-Skills .card-2 > div:nth-of-type(2) ,
+.contaner-About .Technical-Skills .card-2 > div:nth-of-type(3){
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contaner-About .Technical-Skills  .card-2 > div:nth-of-type(1){
+    padding-top: 15px;
+}
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(1) p ,
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(2) p ,
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(3) p{
+    opacity: .8;
+}
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(1) div ,
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(2) div ,
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(3) div{
+   background-color: #ccc;
+   width: 95%;
+   height: 30px;
+ }
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(1) div div ,
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(2) div div ,
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(3) div div{
+  background-color: #757474;
+  width: 90%;
+  position: relative;
+ }
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(2) div div{
+    width: 80%;
+}
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(3) div div{
+    width: 70%;
+}
+
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(1) div div::after ,
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(2) div div::after ,
+.contaner-About .Technical-Skills .card-2 div:nth-of-type(3) div div::after{ 
+  content: '95%';
+  position: absolute;
+  color: #fff;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+.contaner-About .Technical-Skills .card-2 button{
+    align-self:flex-start;
+    padding: 20px 25px;
+    border: none;
+  background-color: #757474;
+ color: #fff;
+ transition: 0.5s;
+}
+.contaner-About .Technical-Skills .card-2 button i{
+    padding-right: 10px;
+}
+.contaner-About .Technical-Skills .card-2 button:hover{
+   background-color: #ccc;
+   color: #000;
+}
+@media (max-width:600px) {
+.contaner-About .card{
+    flex-direction: column;
+    gap: 0;
+}
+
+    .contaner-About .card div:nth-of-type(1),
+.contaner-About .card div:nth-of-type(2){
+  width: 100%;
+}
+
+
+}
+/* end contaner-About */
+
+
+/* start contaner-tabel */
+.contaner-tabel{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+    
+}
+.contaner-tabel .card-3:hover{
+    opacity: 1;
+}
+.contaner-tabel .card-3{
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+    opacity: .4;
+    transition: 0.5s;
+   width: calc((100% - 40px) / 3);
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+   padding:0 0  20px 0;
+  overflow: hidden;
+}
+
+.contaner-tabel .card-3:nth-of-type(2) >  div:nth-of-type(1){
+    background-color: #009688;
+}
+.contaner-tabel .card-3 >  div:nth-of-type(1){
+   background-color: #000;
+   color: #fff;
+   padding: 20px;
+   width: 100%;
+   text-align: center;
+   font-size: 25px;
+}
+.contaner-tabel .card-3  div:nth-of-type(2),
+.contaner-tabel .card-3  div:nth-of-type(3),
+.contaner-tabel .card-3  div:nth-of-type(4),
+.contaner-tabel .card-3  div:nth-of-type(5){
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ padding: 10px;
+ font-size: 15px;
+}
+ 
+
+
+.contaner-tabel .card-3 >  div:nth-of-type(2)::after,
+.contaner-tabel .card-3 >  div:nth-of-type(3)::after,
+.contaner-tabel .card-3 >  div:nth-of-type(4)::after,
+.contaner-tabel .card-3  > div:nth-of-type(5)::after{
+    content: '';
+    position: absolute;
+   bottom: -10px;
+    left: 0;
+  border-bottom: 1px solid #000;
+  width: 100%;
+ 
+}
+.contaner-tabel .card-3  div:nth-of-type(6){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.contaner-tabel .card-3  div:nth-of-type(6) div:nth-of-type(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    gap: 10px;
+
+}
+.contaner-tabel .card-3  div:nth-of-type(6) div:nth-of-type(1) span{
+    font-size: 35px;
+    font-weight: normal;
+
+}
+.contaner-tabel .card-3:nth-of-type(2)  div:nth-of-type(6) div:nth-of-type(1) b span,
+.contaner-tabel .card-3:nth-of-type(3)  div:nth-of-type(6) div:nth-of-type(1) b span{
+    font-size: 28px;
+    text-align: center;
+}
+.contaner-tabel .card-3:nth-of-type(2)  div:nth-of-type(6) div:nth-of-type(1) b,
+.contaner-tabel .card-3:nth-of-type(3)  div:nth-of-type(6) div:nth-of-type(1) b {
+  font-size: 25px;
+}
+.contaner-tabel .card-3  div:nth-of-type(6) div:nth-of-type(1) b{
+    font-size: 25px;
+    font-weight: normal;
+}
+.contaner-tabel .card-3 div:nth-of-type(6) div:nth-of-type(2){
+  font-size: 15px;
+  opacity: .7;
+}
+.contaner-tabel .card-3 button{
+padding: 10px 20px;
+background-color:#009688 ;
+border: none;
+}
+@media (max-width:600px) {
+    .contaner-tabel{
+        flex-direction: column;
+        gap: 20px;
+    }
+        .contaner-tabel .card-3{
+           width: 100%;
+        }
+      
+}
+
+/* end contaner-tabel */
+
+/* start  sec-form */
+.sec-form{
+    background-color: #9e9e9e;
+    height: max-content;
+    width: 100%;
+
+}
+.sec-form .contaner-a{
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+}
+.sec-form .contaner-a .top-a{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+.sec-form .contaner-a .top-a .back{
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+}
+.sec-form .contaner-a .top-a h4{
+    font-size: 25px;
+    font-weight: 100;
+} 
+.sec-form .contaner-a .top-a div{
+ display: flex;
+ align-items: center;
+ background-color: #757474 ;
+ height: 100px;
+} 
+.sec-form .contaner-a .top-a div div{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 20px;
+}
+.sec-form .contaner-a .top-a div div:nth-of-type(2){
+    background-color: #009688;
+    
+    height: 100%;
+}
+
+.sec-form .contaner-a .top-a div div i{
+    font-size: 25px;
+}
+.sec-form .contaner-a .top-a div div p{
+       font-size: 14px;
+}
+.sec-form .contaner-a .body-a{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sec-form .contaner-a .body-a input{
+    width: 100%;
+    box-sizing: border-box;
+}
+.sec-form .contaner-a .body-a input{
+    padding: 10px 20px;
+}
+.sec-form .contaner-a .body-a button{
+  width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    gap: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+.sec-form .contaner-a .body-a button:hover{
+    background-color: #ccc;
+}
+
+.sec-form .contaner-a .body-a button i{
+    font-size: 20px;
+    
+}
+.sec-form .contaner-2{
+    background-color: #616161;
+    width: 100%;
+    height: 50vh;
+    padding: 40px;
+    display: flex;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.sec-form .contaner-2 .card-1{
+    width: calc((100% - 40px) / 3  );
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+
+}
+.sec-form .contaner-2 .card-1 strong{
+font-size: 25px;
+font-weight: 100;
+}
+.sec-form .contaner-2 .card-1 > p{
+  font-size: 14px;
+} 
+.sec-form .contaner-2 .card-1  div{
+ display: flex;
+ font-size: 15px;
+}
+
+.sec-form .contaner-2 .card-1  div a{
+    color: #fff;
+}
+
+.sec-form .contaner-2 .card{
+    width: calc((100% - 40px) / 3 * 2  );
+    display: flex;
+    gap: 20px;
+}
+.sec-form .contaner-2 .card-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: calc((100% - 20px))
+}
+
+
+
+.sec-form .contaner-2 .card-2 strong{
+  font-size: 25px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.sec-form .contaner-2 .card-2 nav > div:hover img{
+    transform: scale(1.2);
+}
+.sec-form .contaner-2 .card-2 nav > div{
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.sec-form .contaner-2 .card-2 nav > div:hover{
+    background-color: #ccc;
+    width: 100%;
+    z-index: 5;
+}
+.sec-form .contaner-2 .card-2 nav > div:nth-of-type(1):after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+.sec-form .contaner-2 .card-2 nav div{
+display: flex;
+align-items: center;
+gap: 5px;
+position: relative;
+padding-bottom: 10px;
+}
+.sec-form .contaner-2 .card-2 nav .card-img{
+    background-color: #ccc;
+    width: 100%;
+}
+.sec-form .contaner-2 .card-2 nav div div{
+  width: 50px;
+  height: 50px;
+}
+.sec-form .contaner-2 .card-2 nav div div img{
+    width: 100%;
+    height: 100%;
+  transition: 0.5s;
+} 
+.sec-form .contaner-2 .card-2 nav div p{
+    color: #fff;
+    font-weight: 100;
+} 
+.sec-form .contaner-2 .card-3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sec-form .contaner-2 .card-3 strong{
+font-size: 25px;
+font-weight: 100;
+}
+.sec-form .contaner-2 .card-3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.sec-form .contaner-2 .card-3 ul li{
+    list-style: none;
+    background-color: #c2c0c0;
+    padding: 5px;
+}
+.sec-form .contaner-2 .card-3 ul div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+.sec-form .contaner-2 .card-3 ul div:nth-of-type(1) li:nth-of-type(1){
+  background-color: #000;
+  color: #fff;
+}
+.sec-form .contaner-2 .card-3 ul div{
+ width: calc((100% - 20px) / 3);
+}
+.sec-form .contaner-2 .card-3 ul div li{
+    font-size: 13px;
+}
+
+.sec-form .contaner-3{
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.sec-form .contaner-3 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-form .contaner-3 div a{
+    color: #fff;
+}
+
+@media (max-width:600px) {
+    .sec-form{
+        width: 100%;
+    }
+    .sec-form .contaner-2{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: max-content;
+        padding: 20px;
+    }
+        .sec-form .contaner-2 .card-1{
+           width: 100%;
+        }
+        .sec-form .contaner-2 .card{
+           width: 100%;
+            
+        }
+        .sec-form .contaner-2 .card{
+           
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sec-form .contaner-2 .card *{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+}
+/* end  sec-form */
+/* end aside */
